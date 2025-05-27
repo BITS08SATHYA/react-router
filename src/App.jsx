@@ -5,6 +5,7 @@ import About from "./About.jsx";
 import Contact from "./Contact.jsx";
 import NotFound from "./NotFound.jsx";
 import CurrentLocation from "./CurrentLocation.jsx";
+import Dashboard from "./Dashboard.jsx";
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
                     About</Link></li>
                 <li><Link className='text-white hover:text-yellow-300 font-medium transition duration-300' to={"/contact"} >
                     Contact</Link></li>
+                <li><button className='text-white hover:text-yellow-300 font-medium transition duration-300' to={"/contact"} >
+                    Contact</button></li>
             </ul>
         </nav>
             <CurrentLocation />
@@ -30,6 +33,7 @@ function App() {
         <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact  />} />
+          <Route path='/dashboard' element={<Dashboard  />} />
           <Route path='*' element={<NotFound />} />
       </Routes>
             </div>
