@@ -4,6 +4,7 @@ import Home from "./Home.jsx";
 import About from "./About.jsx";
 import Contact from "./Contact.jsx";
 import NotFound from "./NotFound.jsx";
+import CurrentLocation from "./CurrentLocation.jsx";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                     Contact</Link></li>
             </ul>
         </nav>
+            <CurrentLocation />
             <div className='container mx-auto py-8'>
       <Routes>
         <Route path='/' element={<Home />} />
